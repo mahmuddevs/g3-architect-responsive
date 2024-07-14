@@ -46,6 +46,7 @@ body {
     display: inline-block;
     text-decoration: none;
     color: #FFF;
+    font-weight: 600;
     padding: 1rem 1.8rem;
     border-radius: 8px;
     background-color: var(--color-primary);
@@ -103,4 +104,60 @@ nav h3 {
 
 .banner-txt h1 {
     font-size: 4rem;
+}
+
+/* Features */
+
+.features-txt h1 {
+    color: var(--txt-gray);
+    font-size: 3.8rem;
+}
+
+.features-txt .features-header1 {
+    color: var(--txt-dark1)
+}
+
+.features-txt .features-header2 {
+    color: var(--color-primary);
+}
+
+.features {
+    max-width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4.5rem;
+    margin: 8.5rem auto;
+
+}
+
+.img-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+}
+
+.img-grid img {
+    width: 342px;
+    height: 342px;
+    border-radius: 8px;
+}
+
+.features-txt {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+@media screen and (width<=1440px) {
+    .container {
+        margin: 0 1.5rem;
+    }
+}
+
+@media screen and (width<=576px) {
+    .nav-list {
+        display: none;
+    }
 }
