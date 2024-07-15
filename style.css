@@ -107,7 +107,6 @@ nav h3 {
 }
 
 /* Features */
-
 .features-txt h1 {
     color: var(--txt-gray);
     font-size: 3.8rem;
@@ -128,7 +127,6 @@ nav h3 {
     justify-content: center;
     gap: 4.5rem;
     margin: 8.5rem auto;
-
 }
 
 .img-grid {
@@ -149,6 +147,67 @@ nav h3 {
     flex-direction: column;
     gap: 1.5rem;
 }
+
+/* Features Enjoy*/
+.fea-enjoy {
+    display: flex;
+    gap: 11.5rem;
+}
+
+.enjoy-txt h3 {
+    font-size: 2.8rem;
+    line-height: 53px;
+    border-left: 5px solid var(--color-primary);
+    padding-left: 1.6rem;
+    margin-bottom: 1.4rem;
+}
+
+.enjoy-txt p,
+.enjoy-txt-items {
+    max-width: 36.6rem;
+}
+
+.enjoy-txt>p {
+    margin-bottom: 1.8rem;
+}
+
+.enjoy-txt-items {
+    border-radius: 8px;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
+    background: rgb(255, 255, 255);
+    padding: 30px 42px 30px 30px;
+    margin-bottom: 20px;
+}
+
+.enjoy-txt-items h4 {
+    font-size: 1.2rem;
+    margin-bottom: 0.6rem;
+}
+
+.enjoy-img {
+    position: relative;
+}
+
+.enjoy-img-box {
+    border-radius: 8px;
+    background: var(--color-primary);
+    padding: 2.8rem 2.6rem;
+    text-align: center;
+    position: absolute;
+    bottom: 0rem;
+    left: -5.7rem;
+}
+
+.enjoy-img-box h4 {
+    font-size: 4rem;
+    color: #FFF;
+}
+
+.enjoy-img-box p {
+    font-size: 1.4rem;
+    color: #FFF;
+}
+
 
 @media screen and (width<=1440px) {
     .container {
