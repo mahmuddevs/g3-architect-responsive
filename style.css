@@ -152,6 +152,7 @@ nav h3 {
 .fea-enjoy {
     display: flex;
     gap: 11.5rem;
+    margin-bottom: 8rem;
 }
 
 .enjoy-txt h3 {
@@ -206,6 +207,89 @@ nav h3 {
 .enjoy-img-box p {
     font-size: 1.4rem;
     color: #FFF;
+}
+
+/* Facts */
+.facts {
+    margin-bottom: 6.7rem;
+}
+
+.facts h3 {
+    font-size: 3.8rem;
+    margin-bottom: 1.5rem;
+}
+
+.fact-cards {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 3rem;
+    margin-top: 6.2rem;
+    flex-wrap: wrap;
+}
+
+.fact-card {
+    width: 241.83px;
+    height: 241.83px;
+    border: 1px solid var(--color-primary);
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.fact-card img {
+    width: 45.22px;
+    height: 45.22px;
+}
+
+.fact-card h5 {
+    font-size: 3.8rem;
+}
+
+.fact-card p {
+    font-size: 1.2rem;
+}
+
+/* Sponsor */
+.sponsor {
+    margin-bottom: 8.2rem;
+}
+
+.sponsor-txt {
+    max-width: 542px;
+    margin: 0 auto;
+    margin-bottom: 4rem;
+    text-align: center;
+}
+
+.sponsor-txt h3 {
+    font-size: 2.8rem;
+    margin-bottom: 1.5rem;
+}
+
+.sponsor-brands {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.sponsor-brands img {
+    width: 166.76px;
+    height: 50px;
+    filter: grayscale(100%);
+}
+
+/* Footer */
+
+footer p {
+    color: var(--txt-dark2);
+    font-size: 1.2rem;
+    padding: 2.4rem 0;
+    text-align: center;
+    background: var(--color-primary-transparent);
+    margin-bottom: 10rem;
+    border-radius: 8px;
 }
 
 
