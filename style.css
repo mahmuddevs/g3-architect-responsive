@@ -62,6 +62,10 @@ header {
     background: var(--color-primary-transparent);
 }
 
+.burger-menu,
+.close {
+    display: none;
+}
 
 nav.container {
     display: flex;
@@ -116,7 +120,7 @@ nav h3 {
     margin: 8.5rem auto;
 }
 
-.features-txt h1 {
+.features-txt h2 {
     color: var(--txt-gray);
     font-size: 3.8rem;
 }
@@ -314,12 +318,35 @@ footer p {
 }
 
 @media screen and (width<=992px) {
-    nav h3 {
-        font-size: 2rem;
+
+    .burger-menu,
+    .close {
+        display: block;
+        height: 30px;
+        width: 30px;
+    }
+
+    .close {
+        position: absolute;
+        top: 3rem;
     }
 
     .nav-list {
-        display: none;
+        position: fixed;
+        top: 0;
+        right: -100%;
+        z-index: 999;
+        flex-direction: column;
+        justify-content: center;
+        width: 60%;
+        height: 100vh;
+        background: #fff;
+        padding: 3rem;
+        transition: 1s ease-in-out;
+    }
+
+    nav h3 {
+        font-size: 1.4rem !important;
     }
 
     .banner-txt h1 {
@@ -349,7 +376,8 @@ footer p {
     .enjoy-img-box {
         margin-left: 0;
     }
-    .facts{
+
+    .facts {
         text-align: center;
     }
 }
@@ -360,17 +388,15 @@ footer p {
     }
 
     .banner-txt h1 {
-        font-size: 3rem;
+        font-size: 2.3rem;
     }
 
-    .features-txt h1 {
-        font-size: 2.8rem;
+    .features-txt h2 {
+        font-size: 2rem;
     }
 
-    .fea-enjoy h3,
-    .facts h3,
-    .sponsor-txt h3 {
-        font-size: 2.4rem;
+    h3 {
+        font-size: 2rem !important;
     }
 
 
@@ -385,5 +411,13 @@ footer p {
 
     .sponsor-brands {
         justify-content: center;
+    }
+
+    .enjoy-img-box {
+        width: 70%;
+    }
+
+    .btn-primary {
+        padding: 0.6rem 1.2rem;
     }
 }
